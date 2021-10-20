@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_webmvc"/>
+<aop-project name="test"/>
+<aop-project name="spring_di2_annotation"/>
+<aop-project name="spring_di3_javaconfig"/>
+<aop-project name="hello_di"/>
+<aop-project name="spring_di1_xml"/>
+</aop-reference-model>

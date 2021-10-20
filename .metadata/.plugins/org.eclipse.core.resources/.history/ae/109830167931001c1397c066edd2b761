@@ -1,0 +1,14 @@
+package com.ssafy.hw2.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.ssafy.hw2.model.CateVO;
+import com.ssafy.hw2.model.ItemVO;
+
+interface GoodsDAO {
+	List<ItemVO> list(Map<String,Object> map) throws Exception;
+	List<CateVO> listCate(Map<String, Object> map ) throws Exception;
+	int insert(Map<String, Object> map ) throws Exception;
+	int modify(Map<String, Object> map ) throws Exception;
+}

@@ -1,0 +1,46 @@
+package com.ssafy.hw2.service;
+
+import java.util.List;
+import java.util.Map;
+
+import com.ssafy.hw2.dao.GoodsDAOImpl;
+import com.ssafy.hw2.dao.GoodsDAO;
+import com.ssafy.hw2.model.CateVO;
+import com.ssafy.hw2.model.ItemVO;
+
+public class GoodsServiceImpl implements GoodsService{
+	private static GoodsService goodsService = new GoodsServiceImpl();
+	private GoodsDAO goodsdao ;
+	private GoodsServiceImpl() {
+		goodsdao=GoodsDAOImpl.getGoodsDAO();
+	}
+	
+	public static GoodsService getGoodsService() {
+		return goodsService;
+	}
+
+	@Override
+	public List<ItemVO> list(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<CateVO> listCate(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String insert(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean modify(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

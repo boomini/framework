@@ -1,0 +1,6 @@
+package com.ssafy.configuration;
+
+@Configuration
+public class applicationConfigure {
+
+}

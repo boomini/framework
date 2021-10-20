@@ -1,0 +1,6 @@
+package com.ssafy.guestbook.model.service;
+
+@Service
+public class MemberServiceImpl {
+
+}

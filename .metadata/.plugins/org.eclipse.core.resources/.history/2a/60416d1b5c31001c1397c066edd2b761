@@ -1,0 +1,40 @@
+package com.ssafy.guestbook.controller;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.ssafy.guestbook.model.MemberDto;
+import com.ssafy.guestbook.model.service.MemberService;
+
+@Controller
+@RequestMapping("/user")
+public class MemberController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
+	
+	@Autowired
+	private MemberService memberService;
+	
+	@GetMapping("/register")
+	public String register() {
+		return "user/join";
+	}
+	
+	@PostMapping("/register")
+	public String register(MemberDto memberDto,String emailid, String emaildomain) {
+
+		logger.debug("memberDto info : {}", memberDto);
+		return "user/join";
+	}
+	
+	@GetMapping("/login")
+	public String login() {
+		return "user/login";
+	}
+}

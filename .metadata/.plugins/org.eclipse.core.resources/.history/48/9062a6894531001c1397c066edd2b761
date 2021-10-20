@@ -1,0 +1,5 @@
+package com.ssafy.guestbook.model.dao;
+
+public class MemberDaoImpl {
+
+}

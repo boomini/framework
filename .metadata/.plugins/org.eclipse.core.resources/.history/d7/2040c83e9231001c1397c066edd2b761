@@ -1,0 +1,43 @@
+package com.ssafy.hw2.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.sql.DataSource;
+
+import com.ssafy.hw2.model.CateVO;
+import com.ssafy.hw2.model.ItemVO;
+import com.ssafy.util.DBUtil;
+
+public class GoodsDAOImpl implements GoodsDAO{
+	DataSource datasource;
+	DBUtil dbutil;
+	private GoodsDAOImpl(DataSource datasource) {
+		this.datasource = datasource;
+	}	
+
+	@Override
+	public List<ItemVO> list(Map<String, Object> map) throws Exception {
+		System.out.println("의존성 체크");
+		return null;
+	}
+
+	@Override
+	public List<CateVO> listCate(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insert(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int modify(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

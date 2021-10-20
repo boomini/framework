@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="gbService" class="com.ssafy.model.service.GuestBookServiceImpl">
+		<!-- 1. property를 이용하는 첫번째 방법 
+		<property name="guestBookDao">
+			<ref bean="gbDao"/>
+		</property>-->
+		<!-- 2. 두번째 방법 -->
+		<property name="guestBookDao" ref="gbDao"></property>
+	</bean>
+	<bean id="gbDao" class="com.ssafy.model.dao.GuestBookDaoImpl"></bean>
+	<bean id="ds" class="org.springframework.jdbc.datasource.SimpleDriverDataSource"></bean>
+</beans>

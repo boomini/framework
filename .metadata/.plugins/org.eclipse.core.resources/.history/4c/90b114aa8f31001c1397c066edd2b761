@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean 생성 -->
+	<bean id="gService" class="com.ssafy.hw2.service.GoodsServiceImpl">
+
+		<property name="guestBookDao" ref="gDao"></property>
+	</bean>
+	<bean id="gDao" class="com.ssafy.hw2.service.GoodsDAOImpl">
+		<property name="dataSource" ref="ds"></property>
+	</bean>
+	<bean id="ds" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/springcampmall?serverTimezone=UTC&amp;useUniCode=yes&amp;characterEncoding=UTF-8"></property>
+		<property name="username" value="ssafy"></property>
+		<property name="password" value="ssafy"></property>
+	</bean>
+</beans>

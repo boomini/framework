@@ -1,0 +1,5 @@
+package com.ssafy.guestbook.controller;
+
+public class MainController {
+
+}
