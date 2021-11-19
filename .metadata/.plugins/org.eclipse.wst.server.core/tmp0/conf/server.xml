@@ -153,7 +153,10 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\SSAFY\workspace\framework\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\SSAFY\workspace\framework\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\guestbook6_springmvc" path="/guestbook" reloadable="true" source="org.eclipse.jst.jee.server:guestbook6_springmvc"/></Host>
+      <Context docBase="C:\SSAFY\workspace\framework\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\SSAFY\workspace\framework\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\spring_hw_mvc" path="/hw2" reloadable="true" source="org.eclipse.jst.jee.server:spring_hw_mvc">
+	<Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/ssafy" password="ssafy" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/springcampmall?serverTimezone=UTC&amp;useUniCode=yes&amp;characterEncoding=UTF-8" username="ssafy"/> 
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+</Context></Host>
     </Engine>
   </Service>
 </Server>

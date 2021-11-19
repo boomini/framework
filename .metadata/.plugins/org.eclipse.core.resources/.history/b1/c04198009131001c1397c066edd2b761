@@ -1,7 +1,0 @@
-package com.ssafy.main;
-
-public class GoodsMain {
-	public static void main(String[] args) {
-		
-	}
-}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.hw2.dao.GoodsDAO">
+
+	<resultMap type = "ItemVO" id="goodsList">
+		<result column="seq" property="seq"/>
+		<result column="item_code" property="item_code"/>
+		<result column="item_name" property="item_name"/>
+		<result column="item_price" property="item_price"/>
+		<result column="item_corp" property="item_corp"/>
+		<result column="date" property="date"/>
+		<result column="cate" property="cate"/>
+		<collection property="fileInfos" column="seq=seq" javaType="list" ofType="FileInfo" select ="fileInfoList"></collection>
+	</resultMap>
+	<select id="list" resultMap="goodsList">
+		select i.seq, i.item_code, i.item_name, i.item_price, i.item_corp, i.item_stat, i.dt_reg date, c.cate_name cate
+		from hw2_goods_info i
+		join hw2_goods_category c
+		on i.cate_seq = c.cate_seq
+		order by seq desc;
+	</select>
+	
+	<select id="fileInfoList" resultType="FileInfo">
+		select seq, photo_seq, file_name, file_path_org, file_size, dt_reg
+		from photo_files
+		where photo_seq=#{seq}
+	</select>
+	<insert id="insert" parameterType="ItemVO">
+		insert into hw2_goods_info (seq, item_code, item_name, item_price, item_corp, item_stat, dt_reg, cate_seq)
+		values (#{seq}, #{item_code}, #{item_name}, #{item_price}, #{item_corp}, #{item_stat}, now(), #{cate_seq})
+		<selectKey resultType="int" keyProperty="seq" order="AFTER">
+			select last_insert_id()
+		</selectKey>
+	</insert>
+	<insert id="insertFile" parameterType="ItemVO">
+		insert into photo_files (photo_seq, file_name, file_path_org, file_size, dt_reg)
+		values 
+		<foreach collection="fileInfos" item = "fileinfo" separator=" , ">
+			(#{seq}, #{fileinfo.file_name}, #{fileinfo.file_path_org}, #{fileinfo.file_size}, NOW())
+		</foreach>
+	</insert>
+	
+	<select id="getItem" parameterType="int" resultType="ItemVO">
+		select seq, item_code, item_name, item_price, item_corp, item_stat, dt_reg date, cate_seq
+		from hw2_goods_info
+		where seq = #{seq}
+	</select>
+	
+	<select id="login" parameterType="map" resultType="int">
+		select count(*)
+		from user
+		where iduser = #{userid} and password = #{userpwd}
+	</select>
+	
+	<delete id="delete" parameterType="String">
+		delete from hw2_goods_info
+		where seq in
+		<foreach collection="list" item="a" open="(" close=")" separator=",">#{a}</foreach>
+	</delete>
+	
+	<update id="modify" parameterType="ItemVO">
+		update hw2_goods_info
+		set item_name = #{item_name} ,  item_price= #{item_price}, item_corp = #{item_corp}, item_stat = #{item_stat}, cate_seq = #{cate_seq}
+		where item_code = #{item_code}
+	</update>
+</mapper>

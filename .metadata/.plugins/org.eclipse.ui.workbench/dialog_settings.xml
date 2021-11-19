@@ -10,12 +10,29 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\bomin\Downloads\VueAPI_배포"/>
+			<item value="C:\Users\bomin\Downloads\데일리+실습_Framework+Vue.js_04_3_제공파일"/>
+			<item value="C:\Users\bomin\Downloads\1109_배포 (2)\axios\VueAPI"/>
+			<item value="C:\SSAFY\workspace\framework\guestbook5_restapi"/>
+			<item value="C:\Users\bomin\Downloads\guestbook5_restapi_배포"/>
+			<item value="C:\Users\bomin\OneDrive\문서\카카오톡 받은 파일\live_guestbook3_mybatis_배포"/>
+			<item value="C:\Users\bomin\Downloads\framework_1025_배포\guestbook2_file_interceptor"/>
+			<item value="C:\Users\bomin\Downloads\framework_1021_배포\guestbook2_file_interceptor"/>
+			<item value="C:\Users\bomin\Downloads\framework_1021_배포\guestbook1_springmvc"/>
+			<item value="C:\SSAFY\workspace\framework\spring_di"/>
+			<item value="C:\SSAFY\workspace\framework\spring_di1_xml"/>
 			<item value="C:\Users\bomin\Downloads\spring_webmvc_배포"/>
 			<item value="C:\SSAFY\workspace\framework\spring_di2_annotation"/>
-			<item value="C:\SSAFY\workspace\framework\spring_di1_xml"/>
 			<item value="C:\Users\bomin\Downloads\framework_1018_배포\spring_di_annotation"/>
 			<item value="C:\Users\bomin\Downloads\framework_1018_배포\spring_di_xml"/>
 			<item value="C:\Users\bomin\Downloads\framework_1018_배포\hello_di"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.wst.XMLCategory"/>
 		</list>
 	</section>
 </section>

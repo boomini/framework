@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(252, 239, 216);
+}
+
+a:hover {
+  /* 마우스 올렸을때 */
+  cursor: pointer;
+  font-weight: bold;
+}
+.header {
+  box-shadow: 0px 1px 10px rgba(37, 76, 184, 0.233);
+  height: 70px;
+  background-color: rgb(87, 87, 87);
+}
+.header > .nav {
+  max-width: 100%;
+  width: calc(100%-100px);
+}
+#logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: wheat;
+}
+.login-area {
+  float: right;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: 100px;
+}
+.nav {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 10px;
+}
+.center {
+  width: 100%;
+  height: 100%;
+}
+.left {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+.menu {
+  box-shadow: 0px 1px 10px rgba(37, 76, 184, 0.233);
+  background-color: rgb(190, 190, 190);
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#menu > li {
+  margin: 10px;
+  padding: 10px;
+  color: wheat;
+}
+.content {
+  float: right;
+  width: 75%;
+  height: 100%;
+  margin-top: 20px;
+}

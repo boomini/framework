@@ -1,7 +1,0 @@
-package com.ssafy.guestbook.model.service;
-
-public class MemberService {
-	int idCheck(String id) throws Exception;
-	void registerMember(MemberDto memberDto) throws Exception;
-	MemberDto login(String id, String pass) throws Exception;
-}

@@ -1,0 +1,121 @@
+1. spring legacy 프로젝트(mvc)
+2. 버전변경 java : 1.8 web4.0
+3. pom.xml => java: 1.8 , springframework-version->5,3,9
+=>그냥 다른 프로젝트 pom.xml 싹다 복사해라
+
+4. web.xml
+<filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+          <param-name>encoding</param-name>
+          <param-value>UTF-8</param-value>
+        </init-param>
+     </filter>
+     
+     <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+     </filter-mapping>
+
+web.xml 도 다 복사하기 fileter랑 initparam 가져와야함
+
+
+5. 실행해서 설정먼저 확인하기
+6. 보이는 화면은 전부 web-inf => views
+7. controller, model(dto,service,dao) 
+8. db연결  (root-context.xml)
+<bean id="ds" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/ssafyweb?serverTimezone=UTC&amp;useUniCode=yes&amp;characterEncoding=UTF-8"></property>
+		<property name="username" value="ssafy"></property>
+		<property name="password" value="ssafy"></property>
+	</bean>
+=> root-context.xml
+
+웹 관련된거 => servlet-context.xml
+jar파일 => pom.xml
+9. service => @Service dao=> @Repository
+dao : @Autowired datasource
+service : @autowired dao
+DBUtil : @component
+servelt-context.xml
+<context:component-scan base-package="com.ssafy.hw2" />
+
+10. include 만들었을시 path
+"/WEB-INF/views/inclue/...."
+
+11.모든 jsp는 controller를 거쳐야한다. index도 controller만들어줘야한다.
+@Controller
+컨트롤러 각 메소드 @RequestMapping처리
+@RequestMapping(value="/", method="RequestMethod.GET")
+@GetMapping()
+@PostMapping()
+
+* resource 설정
+	<resources mapping="/img/**" location="/resources/img/" />
+	<resources mapping="/css/**" location="/resources/css/" />
+	<resources mapping="/js/**" location="/resources/js/" />
+
+12. controller 생성후
+@Autowired
+private Service service;
+
+13 aop 설정시 root-context.xml namespace에서 aop, beans , context설정
+guestbook전인 util을 사용해야 할때 스캔하는 방법
+root를 먼저 읽기 때문에
+스캔은 1. root-context.xml util넣고
+2. servlet-context guestbook scan
+
+14 aop 설정시, aop namespace를 이용한 설정.
+root-context : <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+aspect class를 어노테이션으로 빈등록
+
+15. db connection pool 설정시
+meta-inf => context.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/ssafy" auth="Container" type="javax.sql.DataSource" 
+			maxTotal="100" maxIdle="30" maxWaitMillis="10000" 
+			username="ssafy" password="ssafy" driverClassName="com.mysql.cj.jdbc.Driver" 	
+			url="jdbc:mysql://localhost:3306/ssafyweb?serverTimezone=UTC&amp;useUniCode=yes&amp;characterEncoding=UTF-8"/> 
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+</Context>
+
+root-context.xml
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="java:comp/env/jdbc/ssafy"></property>
+	</bean>
+
+16 . aop
+Before - method가 실행되기 전
+After - method가 return되기 전
+AfterReturning - method가 return된 후
+AfterThrowing – 에러 발생 시
+Around - method가 실행되기 전 / 후
+
+17. 파일업로드
+ 1. pom.xml common=file upload 추가
+ 2. servlet-context.xml 
+<!-- fileUpload -->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="defaultEncoding" value="UTF-8"/>
+		<beans:property name="maxUploadSize" value="52428800"/> 
+		<beans:property name="maxInMemorySize" value="1048576"/> 
+	</beans:bean>
+ 3. form=> file 반드시 post방식, enctype = "multipart/form-data" 반드시 설정  multiple=>설정시 여러개 파일 올리기 가능 
+4. controller 작성 :  multifile로 param 받으면 된다.
+
+
+18 interceptor
+servlet-context.xml
+<beans:bean id="confirm" class="com.ssafy.interceptor.ConfirmInterceptor"/>
+
+	<interceptors>
+		<interceptor>
+			<mapping path="/guestbook/register"/>
+			<mapping path="/guestbook/modify"/>
+			<mapping path="/guestbook/delete"/>
+			<beans:ref bean="confirm"/>
+		</interceptor>
+	</interceptors>

@@ -1,5 +1,0 @@
-package com.ssafy.hw2.dao;
-
-interface GoodsDAO {
-	List<ItemVO> list(Map<String,Object>) throws Exception;
-}

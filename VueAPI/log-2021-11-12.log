@@ -1,0 +1,2 @@
+[2m2021-11-12 00:44:56.603[0;39m [32m INFO[0;39m [35m18444[0;39m [2m---[0;39m [2m[(497)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[2m2021-11-12 00:44:57.152[0;39m [32m INFO[0;39m [35m18444[0;39m [2m---[0;39m [2m[(497)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'

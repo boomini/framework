@@ -1,7 +1,0 @@
-package com.ssafy.hw2.dao;
-
-import java.util.Map;
-
-interface GoodsDAO {
-	List<ItemVO> list(Map<String,Object> map) throws Exception;
-}

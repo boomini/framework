@@ -1,5 +1,0 @@
-package com.ssafy.guestbook.model.service;
-
-public class GuestBookService {
-
-}

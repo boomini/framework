@@ -15,3 +15,81 @@
 10월 20, 2021 11:32:26.36 [13140:16172:1020/113226.362:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
 10월 20, 2021 19:00:29.67 [13140:14908:1020/190029.206:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
 10월 20, 2021 19:00:32.37 [13140:16156:1020/190032.371:ERROR:device_event_log_impl.cc(214)] [19:00:32.370] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+
+10월 27, 2021 17:08:20.67 NEW SESSION
+10월 27, 2021 17:08:20.67 [10684:5104:1027/170820.657:ERROR:device_event_log_impl.cc(214)] [17:08:20.657] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 27, 2021 17:08:20.67 [10684:5104:1027/170820.658:ERROR:device_event_log_impl.cc(214)] [17:08:20.658] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 27, 2021 17:08:20.67 [10684:5104:1027/170820.658:ERROR:device_event_log_impl.cc(214)] [17:08:20.658] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 27, 2021 17:08:21.23 [10684:3696:1027/170821.231:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 27, 2021 17:08:21.25 [10684:3696:1027/170821.255:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 27, 2021 17:08:23.26 [10684:3696:1027/170823.268:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 27, 2021 17:08:23.27 [10684:3696:1027/170823.273:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+10월 27, 2021 17:08:31.08 [10684:5104:1027/170831.084:ERROR:pending_extension_manager.cc(64)] Corrupted extension dheimbmpmkbepjjcobigjacfepohombn reinstalled with latency 15.185 s
+10월 27, 2021 17:08:31.71 [10684:5104:1027/170831.718:ERROR:pending_extension_manager.cc(64)] Corrupted extension jamfbhbmmopcmncgnapfifjiimomgpfp reinstalled with latency 15.8112 s
+10월 27, 2021 17:08:32.17 [10684:5104:1027/170832.178:ERROR:pending_extension_manager.cc(64)] Corrupted extension ooadnieabchijkibjpeieeliohjidnjj reinstalled with latency 16.2092 s
+10월 27, 2021 21:32:35.39 [10684:3296:1027/213235.382:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+10월 27, 2021 21:32:35.49 [10684:10220:1027/213235.495:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+10월 27, 2021 21:32:35.71 [10684:3296:1027/213235.709:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+10월 27, 2021 21:32:37.72 [10684:5104:1027/213237.727:ERROR:device_event_log_impl.cc(214)] [21:32:37.726] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+10월 27, 2021 21:32:47.67 [10684:3296:1027/213247.679:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+10월 28, 2021 01:13:49.85 [10684:5104:1028/011349.854:ERROR:device_event_log_impl.cc(214)] [01:13:49.849] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+10월 28, 2021 01:26:04.72 [13272:7528:1028/012603.616:ERROR:device_event_log_impl.cc(214)] [01:26:03.617] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 28, 2021 01:26:04.73 [13272:7528:1028/012603.619:ERROR:device_event_log_impl.cc(214)] [01:26:03.620] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 28, 2021 01:26:05.62 [13272:7600:1028/012605.619:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 28, 2021 01:26:05.71 [13272:7600:1028/012605.619:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 28, 2021 01:26:05.72 [13272:7600:1028/012605.717:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 28, 2021 01:26:06.73 [13272:7600:1028/012606.730:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+10월 28, 2021 01:26:10.84 [13272:7528:1028/012610.846:ERROR:pending_extension_manager.cc(64)] Corrupted extension aapbdbdomjkkjkaonfhkkikfgjllcleb reinstalled with latency 12.5036 s
+10월 28, 2021 01:26:11.39 [13272:7528:1028/012611.398:ERROR:pending_extension_manager.cc(64)] Corrupted extension dheimbmpmkbepjjcobigjacfepohombn reinstalled with latency 12.8858 s
+10월 28, 2021 01:26:11.88 [13272:7528:1028/012611.883:ERROR:pending_extension_manager.cc(64)] Corrupted extension ooadnieabchijkibjpeieeliohjidnjj reinstalled with latency 13.3546 s
+10월 28, 2021 01:35:54.21 [7180:13084:1028/013554.213:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 28, 2021 01:35:54.22 [7180:13084:1028/013554.228:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 28, 2021 01:35:54.23 [7180:13084:1028/013554.230:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 28, 2021 01:35:54.24 [7180:7620:1028/013554.241:ERROR:device_event_log_impl.cc(214)] [01:35:54.241] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 28, 2021 01:35:54.24 [7180:7620:1028/013554.242:ERROR:device_event_log_impl.cc(214)] [01:35:54.242] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 28, 2021 01:35:54.27 [7180:13084:1028/013554.279:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+10월 28, 2021 01:48:27.35 [7180:7620:1028/014827.346:ERROR:CONSOLE(1)] "Ignoring unauthorized client request from null", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+10월 28, 2021 01:48:27.35 [7180:7620:1028/014827.353:ERROR:CONSOLE(1)] "Ignoring unauthorized client request from null", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+
+11월 02, 2021 19:51:43.97 NEW SESSION
+11월 02, 2021 19:51:43.98 [10336:4148:1102/195143.467:ERROR:device_event_log_impl.cc(214)] [19:51:43.466] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 02, 2021 19:51:44.04 [10336:4148:1102/195143.469:ERROR:device_event_log_impl.cc(214)] [19:51:43.468] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 02, 2021 19:51:44.05 [10336:16196:1102/195143.962:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+11월 02, 2021 19:51:44.05 [10336:16196:1102/195143.962:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+11월 02, 2021 19:51:44.06 [10336:16196:1102/195143.964:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+11월 02, 2021 19:51:44.08 [10336:16196:1102/195143.966:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+11월 02, 2021 19:51:53.58 [10336:4148:1102/195153.584:ERROR:pending_extension_manager.cc(64)] Corrupted extension aapbdbdomjkkjkaonfhkkikfgjllcleb reinstalled with latency 16.217 s
+11월 02, 2021 19:51:57.75 [10336:4148:1102/195157.750:ERROR:pending_extension_manager.cc(64)] Corrupted extension cfhdojbkjhnklbpkdaibdccddilifddb reinstalled with latency 20.315 s
+11월 02, 2021 19:52:05.91 [10336:4148:1102/195205.913:ERROR:pending_extension_manager.cc(64)] Corrupted extension dheimbmpmkbepjjcobigjacfepohombn reinstalled with latency 28.3743 s
+11월 02, 2021 19:52:15.52 [10336:4148:1102/195215.525:ERROR:pending_extension_manager.cc(64)] Corrupted extension fngmhnnpilhplaeedifhccceomclgfbg reinstalled with latency 37.9807 s
+11월 02, 2021 19:52:16.11 [10336:4148:1102/195216.116:ERROR:pending_extension_manager.cc(64)] Corrupted extension ooadnieabchijkibjpeieeliohjidnjj reinstalled with latency 38.5511 s
+11월 02, 2021 20:29:38.33 [10336:4148:1102/202938.332:ERROR:CONSOLE(1)] "Ignoring unauthorized client request from null", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+11월 02, 2021 20:29:38.38 [10336:4148:1102/202938.379:ERROR:CONSOLE(1)] "Ignoring unauthorized client request from null", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+
+11월 09, 2021 17:40:01.45 NEW SESSION
+11월 09, 2021 17:40:01.48 [16936:15824:1109/174001.386:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+11월 09, 2021 17:40:01.49 [16936:15824:1109/174001.386:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+11월 09, 2021 17:40:01.49 [16936:15824:1109/174001.386:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+11월 09, 2021 17:40:01.49 [16936:15824:1109/174001.395:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+11월 09, 2021 17:40:01.49 [16936:17736:1109/174001.425:ERROR:device_event_log_impl.cc(214)] [17:40:01.425] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 09, 2021 17:40:01.49 [16936:17736:1109/174001.428:ERROR:device_event_log_impl.cc(214)] [17:40:01.427] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 09, 2021 17:40:05.59 [16936:17736:1109/174005.596:ERROR:pending_extension_manager.cc(64)] Corrupted extension aapbdbdomjkkjkaonfhkkikfgjllcleb reinstalled with latency 10.6642 s
+11월 09, 2021 17:40:08.60 [16936:17736:1109/174008.599:ERROR:pending_extension_manager.cc(64)] Corrupted extension cfhdojbkjhnklbpkdaibdccddilifddb reinstalled with latency 13.6469 s
+11월 09, 2021 17:40:12.13 [16936:17736:1109/174012.137:ERROR:pending_extension_manager.cc(64)] Corrupted extension dheimbmpmkbepjjcobigjacfepohombn reinstalled with latency 17.178 s
+11월 09, 2021 17:40:14.68 [16936:17736:1109/174014.688:ERROR:pending_extension_manager.cc(64)] Corrupted extension fngmhnnpilhplaeedifhccceomclgfbg reinstalled with latency 19.66 s
+11월 09, 2021 17:40:16.90 [16936:17736:1109/174016.900:ERROR:pending_extension_manager.cc(64)] Corrupted extension jamfbhbmmopcmncgnapfifjiimomgpfp reinstalled with latency 21.8612 s
+11월 09, 2021 17:40:18.24 [16936:17736:1109/174018.240:ERROR:pending_extension_manager.cc(64)] Corrupted extension nhdogjmejiglipccpnnnanhbledajbpd reinstalled with latency 23.1874 s
+11월 09, 2021 17:40:18.91 [16936:17736:1109/174018.915:ERROR:pending_extension_manager.cc(64)] Corrupted extension ooadnieabchijkibjpeieeliohjidnjj reinstalled with latency 23.8581 s
+11월 09, 2021 19:03:19.17 [16936:17736:1109/190319.161:ERROR:device_event_log_impl.cc(214)] [19:03:19.161] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+
+11월 16, 2021 22:51:11.31 NEW SESSION
+11월 16, 2021 22:51:11.31 [15064:10544:1116/225111.254:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+11월 16, 2021 22:51:11.33 [15064:10544:1116/225111.254:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+11월 16, 2021 22:51:11.33 [15064:10544:1116/225111.254:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+11월 16, 2021 22:51:11.33 [15064:10544:1116/225111.261:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+11월 16, 2021 22:51:12.36 [15064:5452:1116/225112.367:ERROR:device_event_log_impl.cc(214)] [22:51:12.367] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 16, 2021 22:51:12.52 [15064:5452:1116/225112.519:ERROR:device_event_log_impl.cc(214)] [22:51:12.519] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 16, 2021 22:51:12.53 [15064:5452:1116/225112.530:ERROR:device_event_log_impl.cc(214)] [22:51:12.530] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 16, 2021 22:51:17.19 [15064:5452:1116/225117.192:ERROR:pending_extension_manager.cc(64)] Corrupted extension dheimbmpmkbepjjcobigjacfepohombn reinstalled with latency 10.2561 s
+11월 16, 2021 22:51:19.59 [15064:5452:1116/225119.588:ERROR:pending_extension_manager.cc(64)] Corrupted extension nhdogjmejiglipccpnnnanhbledajbpd reinstalled with latency 12.6427 s
+11월 16, 2021 22:51:20.73 [15064:5452:1116/225120.731:ERROR:pending_extension_manager.cc(64)] Corrupted extension ooadnieabchijkibjpeieeliohjidnjj reinstalled with latency 13.7837 s
